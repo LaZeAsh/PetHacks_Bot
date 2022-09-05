@@ -3,6 +3,10 @@ import Discord from 'discord.js';
 import dotenv from 'dotenv';
 dotenv.config();
 
+// Database
+import { mongo } from './database';
+mongo();
+
 const client = new Discord.Client({ intents: [Discord.GatewayIntentBits.Guilds] });
 
 
